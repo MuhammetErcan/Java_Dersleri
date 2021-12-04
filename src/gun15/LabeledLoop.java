@@ -7,15 +7,16 @@ public class LabeledLoop {
        dışarıdaki döngüyü kırmak için dışardki döngüye izin verilir.
         */
 
-        for (int i = 1; i <= 10; i++) {
+       disDöngü : for (int i = 1; i <= 10; i++) {
             for (int j = 1; j <= 10; j++) {
-                if (j == 3) {
+                if (j==3) {
                     System.out.println(i + "x " + j + "=" + i * j);
-                    break;
-                }
+                    break ; // iç döngü 3 te kırıldı
 
+                }
+                System.out.println();
             }
-            System.out.println();
+
         }
     }
 }

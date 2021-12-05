@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class _Soru11 {
     public static void main(String[] args) {
+        /*
+        Kullanıcının istediği kadar sayıları girecek ve sonunda girilen pozitif, negatif ve sıfır sayısını
+        göstermesi gereken bir program yazın.
+
+         */
         Scanner scanner = new Scanner(System.in);
         int countPozitif=0;
         int countNegatif=0;

@@ -15,8 +15,8 @@ public class _01_ArrayMetodlari {
         String[] kelimeler = cumle.split(" ");
         // split() metodu içerisine verilen değere string ifadeyi böler
 
-        for (int i = kelimeler.length; i >=0 ; i--) {
-            System.out.println(kelimeler[i] + " ");
+        for (int i = kelimeler.length-1; i >=0 ; i--) {
+            System.out.print(kelimeler[i] + " ");
 
         }
 

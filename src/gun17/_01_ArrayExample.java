@@ -8,7 +8,7 @@ public class _01_ArrayExample {
         /*
         kullanıcıdan 5 tane sayı alın ve syıarın tek olanlarını bir diziye atın.
          */
-        int count = 0;
+
 
         int[] sayilar = new int[5];
 

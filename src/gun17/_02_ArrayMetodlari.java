@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class _02_ArrayMetodlari {
     public static void main(String[] args) {
-        /*  --> toString
+        /*  --> Arrays.toString
         5 elemanlı bir int dizi oluşturun ve ekrana yazdırın
          */
         int [] nums = {23,34,45,56,67};

@@ -17,7 +17,7 @@ public class _01_Arrays2D {
 
         for (int satir = 0; satir < nums.length; satir++) {
             for (int sütun = 0; sütun < nums[satir].length; sütun++) {
-                // nums[sati].lenght o an ki satırda kaç sütun olduğuna bakar
+                // nums[satir].lenght o an ki satırda kaç sütun olduğuna bakar
                 System.out.print(nums[satir][sütun]);
 
             }

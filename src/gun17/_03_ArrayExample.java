@@ -13,6 +13,7 @@ public class _03_ArrayExample {
 
         for (int i = 0; i < sayilar.length; i++) {
             System.out.println("bir sayi girin");
+            sayilar[i]=scanner.nextInt();
 
         }
         for (int sayi : sayilar){   // foreach kalıbı
@@ -21,5 +22,6 @@ public class _03_ArrayExample {
                 enb=yüzler;
             }
         }
+        System.out.println("enb = " + enb);
     }
 }

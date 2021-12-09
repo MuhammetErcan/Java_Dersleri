@@ -7,7 +7,7 @@ public class _05_Array {
         Scanner scanner= new Scanner(System.in);
         /*
         Kullanıcıdan 5 tane pozitif tam sayi girmesini isteyin.
-        bu sayilari bir diziye atın. bu sayıların en büyüğünü ekrana yazdıın
+        bu sayilari bir diziye atın. bu sayıların en büyüğünü ekrana yazdırın
          */
         System.out.println("5 sayı girin");
        int enb = 0;

@@ -7,28 +7,41 @@ public class _05_Methods {
     public static void main(String[] args) {
 
         /*
-        kullanıcıdan aralarınad boşluk bırakarak 5 tam sayı girmesini isteyin
-        busayılardan en büyük ve en küçüğü  bulan iki farklı metot yazın
+        Kullanicidan aralarinda bir bosluk birakarak 5 tam sayi girmesini isteyin.
+        Bu sayilardan en büyügünü ve en kücügünü bulan iki farkli metot yazin.
          */
-        int [] sayilar= new int[5];
 
-        istenen(sayilar);
-
-    }
-    private static void istenen(int[]array) {
         Scanner scanner = new Scanner(System.in);
-        int enk=0;
-        int enb=0;
 
-        for (int i = 0; i < array.length; i++) {
-            array[i]=scanner.nextInt();
-            Arrays.sort(array);
+        String sayilarCumle = scanner.nextLine();
 
-            enk = array[0];
-            enb = array[array.length-1];
+        String[] array = sayilarCumle.split(" ");
+
+        int[] sayilar = new int[array.length];
+
+        for (int i = 0; i < sayilar.length; i++) {
+            sayilar[i] = Integer.parseInt(array[i]);
         }
 
-        System.out.println("en küçük " + enk);
-        System.out.println("en büyük " + enb);
+        enbArray(sayilar);
+        enkArray(sayilar);
+
     }
+
+    public static void enkArray(int[] nums) {
+        Arrays.sort(nums);
+        /*
+        metot icerisinde baska bir metodda kullanilabilir.
+        Metotlarda yapilan islemler sadece kendi icini etkiler,
+        eger bir metot baska bir metot icerisinde de kullanilirsa o zaman kullanilan
+        metodu da etkiler.
+         */
+        System.out.println("en kücük sayi="+nums[0]);
+    }
+
+    public static void enbArray(int[] dizi) {
+        Arrays.sort(dizi);
+        System.out.println("en büyük sayi="+dizi[dizi.length-1]);
+    }
+
 }

@@ -10,14 +10,23 @@ public class _soru19 {
         bir method yazın.
          */
 
-        System.out.println("yari çapi girin");
-        int yariCap= scanner.nextInt();
+
+
+        int alan = alan(4);
+        int cevre = cevre(4);
+
+        System.out.println("alan = " + alan);
+        System.out.println("cevre = " + cevre);
 
 
 }
-public static void alan (int sayi){
-        int alan=(int)3.14*sayi*sayi;
-    System.out.println("alan = " + alan);
+public static int alan (int sayi){
+        int alanSonuc=(int)(sayi*sayi*3.14);
+    return alanSonuc;
+}
+public static int cevre (int sayi){
+        int cevreSonuc = (int) (2*3.14*sayi);
+        return cevreSonuc;
 }
 }
 

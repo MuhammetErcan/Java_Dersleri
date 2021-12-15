@@ -2,14 +2,10 @@ package gun15HaftaSonu;
 
 import java.util.Scanner;
 
-public class _09Loops {
+public class _09Loops1 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        /*girilen bir kelimenin polidrom olup olmadığını ekrana yazdırın.
-        // tersten okunduğunda aynı olan kelimeler polidromdur
-        //aba adanada
-        adanadc  aba 121 101  polidrom
+        /*  girilen bir kelimenin polidrom olup olmadigini ekrana yazdirin
+          adanadc  aba 121 101  polidrom
           index  0 1 2 3 4 5 6
                  a d a n a d a
                  i   str.length()-1
@@ -24,29 +20,28 @@ public class _09Loops {
            i=2   str.acharAt(2) == str.charAt(6-2)
            i=3   str.acharAt(3) == str.charAt(6-3)
            ...   ...........
-
          */
 
-        System.out.println("bilr kelime girin");
-        String kelime = scanner.nextLine();
 
-        int len = kelime.length();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Metin girin : ");
+        String str = sc.nextLine();
+        int len = str.length();
         boolean pol = true;
 
         for (int i = 0; i < len/2; i++) {
-            if (kelime.charAt(i) != kelime.charAt(len-1-i)) {
+            if (str.charAt(i) != str.charAt(len-1-i)) {
                 pol = false;
                 break;
             }
         }
         if (pol)
-            System.out.println(kelime + " polidromdur");
+            System.out.println(str + " polidromdur");
         else
-            System.out.println(kelime + " polidrom degildir");
-
-
-
-        }
+            System.out.println(str + " polidrom degildir");
 
     }
+}
 
+// 1 ile 100 arasindaki sayilardan 3'e bölünenin sayi yerine FIZZ, 5'e bölünen yerine BAZZ, 15'e bölünen yerine FIZBASS,
+// diger sayilar oldugu gibi yazilacak

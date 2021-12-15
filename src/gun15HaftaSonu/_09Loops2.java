@@ -2,26 +2,19 @@ package gun15HaftaSonu;
 
 import java.util.Scanner;
 
-public class _09LoopCözüm2 {
+public class _09Loops2 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        /*  girilen bir kelimenin polidrom olup olmadigini ekrana yazdirin
+         /*  girilen bir kelimenin polidrom olup olmadigini ekrana yazdirin
           adanadc  aba 121 101  polidrom
-
           abc  ->  cba   -> abc == cba ?
-
             strRev += str.charAt(str.length()-1-i);
-
             a b a
             str.length()-1 = 2;
-
             i   str.charAt(str.length()-1-i)  strRev  (strRev += str.charAt(str.length()-1-i);)
             0   str.charAt(2-0) = a            a
             1   str.charAt(2-1) = b            ab
             2   str.charAt(2-2) = a            aba
-
          */
-
 
         Scanner sc = new Scanner(System.in);
         System.out.print("Metin girin : ");
@@ -44,6 +37,8 @@ public class _09LoopCözüm2 {
             System.out.println(str + " polidromdur");
         else
             System.out.println(str + " polidrom degildir");
+
+
 
     }
 }

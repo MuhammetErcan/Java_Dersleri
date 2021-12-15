@@ -1,25 +1,55 @@
 package gun15HaftaSonu;
 
+import java.util.Scanner;
+
 public class _01SwitchCase1 {
+
     public static void main(String[] args) {
-        int i = 0;
-        int j = 0;
-        while (i < 5){
-            System.out.println(++i + " , " + j++ + " , " + (++i * ++j));
-        }
-        /*                  i               j               EKRAN CIKTISI
-                Basta       0               0
-                1.Tur       1               1                1           0
-                1.Tur       2               2                1           0      4
-                2 tur       3               3                3           2
-                2 tur       4               4                3           2      16
-                3 tur       5               5                5           4
-                3 tur       6               6                5           4      36
-
-            ++i  -->   önce i"yi bir artir sonra isleme sokar
-            i++  -->   önce i"yi isleme sokar sonra bir artirir
 
 
+        Scanner sc = new Scanner(System.in);
+        int gun = sc.nextInt();
+
+        if (gun==1)
+            System.out.println("p.tesi");
+        else if (gun == 2)
+            System.out.println("sali");
+        //.....
+
+        if (gun>5)
+            System.out.println("haftasonu");
+        else
+            System.out.println("haftaici");
+        //.....
+
+        int gun1 = (int)(Math.random()*7)+1;
+        /*
+            [0, 1)*10  = [0, 10) + 1 = [1, 11)
          */
+        switch (gun1){
+            case 1:
+                System.out.println("p.tesi");
+                break;
+            case 2:
+                System.out.println("sali");
+                break;
+            case 3:
+                System.out.println("carsamba");
+                break;
+            case 4:
+                System.out.println("persembe");
+                break;
+            case 5:
+                System.out.println("cuma");
+                break;
+            case 6:
+                System.out.println("c.tesi");
+                break;
+            case 7:
+                System.out.println("pazar");
+                break;
+        }
+
+
     }
 }

@@ -16,14 +16,14 @@ public class _02_ArrayList {
 
 
         // Diziler için Arrays.sort() metodu yerine listler için bu kullanılır
-        Collections.sort(list);     // -->Collections.sort
+        Collections.sort(list);     //                          -->Collections.sort
         System.out.println("list e düzenlendikten sonra = " + list);
 
-        Collections.reverse(list);  // -->Collections.reverse
+        Collections.reverse(list);  //                          -->Collections.reverse
         System.out.println("list yi tersten yazdırma  = " + list);
 
-        System.out.println("list max değer= " + Collections.max(list));
-        System.out.println("list min değer= " + Collections.min(list));
+        System.out.println("list max değer= " + Collections.max(list));  //--> Collections.max
+        System.out.println("list min değer= " + Collections.min(list));   //--> Collections.min
 
         Collections.fill(list,3); // listedeki tüm verilerin yerine yazdığımız veriyi ekler   -->Coolections.fill
         System.out.println("list = " + list);

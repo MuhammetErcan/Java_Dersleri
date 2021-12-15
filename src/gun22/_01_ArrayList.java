@@ -35,7 +35,7 @@ public class _01_ArrayList {
         String trDersi = dersler.get(1);  // Liste içerisindeki elemani index degeri ile cekme   --> get
         System.out.println("trDersi = " + trDersi);
 
-        dersler.set(4,"kimya");   // Liste içerisindeki bir indexteki veriyi kullanmak için kullanılır.  --> set
+        dersler.set(4,"kimya");   // Liste içerisindeki bir indexteki veriyi değiştirmek için kullanılır.  --> set
         System.out.println("dersler = " + dersler);
 
         int uzunluk =dersler.size(); // Listenin uzunluğunu verir yani eleman sayısını verir.   -->size

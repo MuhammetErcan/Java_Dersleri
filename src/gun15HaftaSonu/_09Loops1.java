@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class _09Loops1 {
     public static void main(String[] args) {
         /*  girilen bir kelimenin polidrom olup olmadigini ekrana yazdirin
-          adanadc  aba 121 101  polidrom
+          adanada  aba 121 101  polidrom
           index  0 1 2 3 4 5 6
                  a d a n a d a
                  i   str.length()-1

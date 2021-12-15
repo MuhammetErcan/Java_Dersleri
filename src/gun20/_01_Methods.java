@@ -13,6 +13,7 @@ public class _01_Methods {
 
         sayilariBoslugaGöreDiziyeEkleme("12 23 34 45");
         sayilariVirgüleGöreDiziyeEkleme("23,34,45,56");
+        diziOlusturma();
 
     }
 

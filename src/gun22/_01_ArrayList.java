@@ -48,7 +48,7 @@ public class _01_ArrayList {
         dersler.remove("almanca"); // Belirtilen değeri listeden siler     -->remove
         System.out.println("almanca silindikten sonra dersler  = " + dersler);
 
-        dersler.remove(1); // indedx e veri silme
+        dersler.remove(1); // indedxteki veri silme
         System.out.println("1. indexteki veri silindikten sonra dersler = " + dersler);
 
         int index = dersler.indexOf("kimya");  // Verilen değerinin indexini bulmaya yarar  -->indexOf

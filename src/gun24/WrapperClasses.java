@@ -29,10 +29,10 @@ public class WrapperClasses {
         Double buyukD=34.2;
 
         boolean b = true;
-        Boolean buyukB=false;
+        Boolean buyukB = false;
 
-
-
+        float f = 2.34F;
+        Float buyukF = 3.12f;
 
     }
 

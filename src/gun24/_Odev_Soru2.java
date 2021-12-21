@@ -3,7 +3,7 @@ package gun24;
 import java.util.HashSet;
 import java.util.Scanner;
 
-public class Calisma {
+public class _Odev_Soru2 {
     public static void main(String[] args) {
         Scanner scannerInt = new Scanner(System.in);
         Scanner scannerStr= new Scanner(System.in);

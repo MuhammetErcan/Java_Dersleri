@@ -8,8 +8,11 @@ public class Otomobil {
     int modelYili;
     String marka;
 
-    public void arabaMarkaVeModel(String marka, int modelYili){
-        System.out.println("arabanin markasi " + marka + " arabanin modelYili " + modelYili);
+    public void arabaMarkaVeModel(String marka,int modelYili){
+        System.out.println("arabanin markasi "+marka+" "+"arabanin model yili "+modelYili);
+    }
+    public void markaModelVeRenk(String marka, int modelYili, String renk){
+        System.out.println("arabanin markasi "+marka+" "+"arabanin model yili "+modelYili+" "+"rengi "+renk);
     }
 
 }

@@ -5,39 +5,41 @@ import java.util.Scanner;
 public class Okul {
 
     public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);
-        Ogrenci[] ogrenciler= new Ogrenci[10];
-        // 10 tane öğrenci oluşturdu
 
-
+        Scanner scanner = new Scanner(System.in);
+        Ogrenci[] ogrenciler = new Ogrenci[10];
+        // 10 tane ögrenci olusturdu
 
         int uzunluk = ogrenciler.length;
+        // dizi de kac eleman olacaginin belirtir
         System.out.println("uzunluk = " + uzunluk);
 
+        //1. yol
+        for (int i = 0; i < ogrenciler.length; i++) {
 
+            Ogrenci ogrenci = new Ogrenci();
 
-        for (int i = 0; i < ogrenciler.length ; i++) {
-            Ogrenci ogrenci= new Ogrenci();
-            System.out.println("öğrenci ismi");
-            ogrenci.isim =scanner.nextLine();
-            System.out.println("öğrenci soy ismi");
-            ogrenciler[i].soyisim=scanner.nextLine();
+            System.out.println("ögrenci ismi");
+            ogrenci.isim = scanner.nextLine();
+            System.out.println("ögrenci soy ismi");
+            ogrenci.soyisim = scanner.nextLine();
 
-            ogrenciler[i]=ogrenci;
+            ogrenciler[i] = ogrenci;
+            // ogrenciler dizisine bilgileri girilmis ogrenciyi ekledik
 
         }
 
-        // 2.yol
+        //2. yol
         for (int i = 0; i < ogrenciler.length; i++) {
+
             Ogrenci ogrenci = new Ogrenci();
-            ogrenciler[i]=ogrenci;
-            // ogrenciler dizisine önce bilgileri girilmemiş
+            ogrenciler[i] = ogrenci;
+            // ogrenciler dizisine bilgileri girilmemis ogrenci nesnesini ekledik
 
-
-            System.out.println("öğrenci ismi");
-            ogrenciler[i].isim=scanner.nextLine();
-            System.out.println("öğrenci soy ismi");
-            ogrenciler[i].soyisim=scanner.nextLine();
+            System.out.println("ögrenci ismi");
+            ogrenciler[i].isim = scanner.nextLine();
+            System.out.println("ögrenci soy ismi");
+            ogrenciler[i].soyisim = scanner.nextLine();
 
         }
     }

@@ -14,10 +14,22 @@ public class Fabrika {
         otomobil1.modelYili=2021;
 
         otomobil1.arabaMarkaVeModel(otomobil1.marka, otomobil1.modelYili);
+
+        System.out.println("otomobil1.renk = " + otomobil1.renk);
+        System.out.println("otomobil1.modelYili = " + otomobil1.modelYili);
+
+        System.out.println(otomobil1.marka+" "+otomobil1.renk+" "
+                +otomobil1.motorHacmi+" "+otomobil1.kacKapi
+                +" "+otomobil1.modelYili);
+
+
         // bu parametreler yerine örneğin String marka = "mercedes
         // ve int yil = 2000; yazabiliriz
         // otomobil1.arabaMarkaVeModel(marka, Yil);
         // ya da otomobil1.arabaMarkaVeModel("opel", 2010);
+
+        otomobil1.markaModelVeRenk(otomobil1.marka,otomobil1.modelYili,otomobil1.renk);
+
 
 
         Otomobil otomobil2= new Otomobil();

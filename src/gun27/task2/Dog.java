@@ -7,7 +7,7 @@ public class Dog {
     int yas;
     String sahip;
 
-    // class vars, bir tanedir. nesnede oluşturulmazlar.
+    // class vas, bir tanedir. nesnede oluşturulmazlar.
     static int count;
 
     public static void main(String[] args) {

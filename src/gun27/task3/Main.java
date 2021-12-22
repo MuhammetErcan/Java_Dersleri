@@ -11,7 +11,7 @@ public class Main {
         stopEt(arac1.marka, arac1.yil);
 
         /*
-        2 tane araç nesnesi oluşturup verileri tanımlanıp metotları çalıştırılacak
+        2 tane araç nesnesi oluşturup verileri tanımlanp metotları çalıştırılacak
          */
     }
 

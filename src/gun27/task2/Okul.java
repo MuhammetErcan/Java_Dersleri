@@ -2,7 +2,7 @@ package gun27.task2;
 
 public class Okul {
     public static void main(String[] args) {
-        Ogrenci og1 = new Ogrenci(); // nesne oluşturdum
+        Ogrenci og1 = new Ogrenci(); // nesne olşturdum
         og1.name="Ali";
         og1.number=100;
 

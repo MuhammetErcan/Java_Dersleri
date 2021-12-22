@@ -9,7 +9,7 @@ public class Ogrenci {
     String name;
     int number;
 
-    // static tanımlanmayan tüm variable ve metotlar nesneye aittir.
+    // static tanımlnmayan tüm variable ve metotlar nesneye aittir.
 
     //behaviour, davranış
     //küçük harfle barşlar, camelstyle, hareket içeren giiler kullanılır.

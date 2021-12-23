@@ -1,22 +1,24 @@
 package gun27.task2;
 
-// class isimleri genellikle nesne isimleri gibi olur
-//Büyük harfle başlar, camelStyle şeklinde yazılır
-public class Ogrenci {
-    // öğrenci bilgileri vardır
-    //fields, attributes
+//  class isimleri nesne isimleri gibidir, Elma, Kitap, Araba
+//  Büyük harfle baslar, camelStyle yazim türü ile yazilir
 
-    String name;
+public class Ogrenci {
+    // ögrenci bilgileri vardir
+    // fields, attributes
+    String name;            // instance variable, nesne variable
     int number;
 
-    // static tanımlnmayan tüm variable ve metotlar nesneye aittir.
 
-    //behaviour, davranış
-    //küçük harfle barşlar, camelstyle, hareket içeren giiler kullanılır.
+    // static tanimlanmayan tüm variable ve methodlar nesneye aittir
+
+    // behaviour, davranis
+    // Kucukharfle baslar, camelstyle, hareket iceren filler kullanilir
     public void konus(){
-        System.out.println("konuşuyorum");
+        System.out.println("konusuyorum");
     }
+
     public void adiniSoyle(){
-        System.out.println("adim:" + name + ", numara: " + number);
+        System.out.println("adim:" + name + ", numaram:" + number);
     }
 }

@@ -2,22 +2,25 @@ package gun28.task2;
 
 public class Main {
     public static void main(String[] args) {
-        Insan insan1=new Insan();
+        Insan i1 = new Insan();
+        i1.veriAta("Ali", 25);
+        i1.akrabaAta("Veli", "Ahmet", "Hasan", "Ayse");
 
+        Insan i2 = new Insan();
+        i2.veriAta("Hasan", 35);
+        i2.akrabaAta("Fatma", "Mehmet", "Ali");
 
-        insan1.veriAta("ali", 33);
-        insan1.adiniSoyle();
+        i1.adiniSoyle();
+        i1.akrabalariniSoyle();
+        i2.adiniSoyle();
+        i2.akrabalariniSoyle();
 
-        Insan insan2=new Insan();
-        insan2.ad="Veli";
-        insan2.yas=32;
-        insan2.adiniSoyle();
-        insan2.veriAta(insan2.ad, insan2.yas);
-
-
-
+        insanSayisi();
 
 
     }
 
+    public static void insanSayisi(){
+        System.out.println(Insan.count);
+    }
 }

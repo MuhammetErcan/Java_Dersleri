@@ -1,13 +1,24 @@
 package gun28.task1;
 
 public class Kitap {
-    String ad;
-    int sayfaSayisi;
+    // instance vars
+    String adi;
     int basimYili;
-
+    int sayfaSayisi;
+    int a;
 
     public void bilgileriniYaz(){
-        System.out.println("kitabın adı = " +ad + "sayfa sayisi " + sayfaSayisi + " basim yili " + basimYili);
+        int a = 2;  // local degisken
+        this.a = 3; // this kelimesi class nesnesini ifade eder
+        String adi="";
+
+        System.out.println(
+                "Adi : " + this.adi +
+                        "\nBasim Yili : " + basimYili +
+                        "\nSayfa Sayisi : " + sayfaSayisi
+        );
     }
+
+
 
 }

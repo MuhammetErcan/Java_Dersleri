@@ -8,7 +8,7 @@ public class Main {
 
         Insan i2 = new Insan();
         i2.veriAta("Hasan", 35);
-        i2.akrabaAta("Fatma", "Mehmet", "Ali");
+        i2.akrabaAta("Fatma", "Mhmet", "Ali");
 
         i1.adiniSoyle();
         i1.akrabalariniSoyle();

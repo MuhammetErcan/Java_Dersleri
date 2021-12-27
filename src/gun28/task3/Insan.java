@@ -28,7 +28,7 @@ public class Insan {
     }
 
     public void annenKim(){
-        System.out.println("Anemin adi " + anne.adi + " ve " + anne.yas + " yasinda");
+        System.out.println("Anemin adi " + anne.adi + " ve " + anne.yas + " yasnda");
     }
 
 }

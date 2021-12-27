@@ -9,7 +9,7 @@ public class Kitap {
 
     public void bilgileriniYaz(){
         int a = 2;  // local degisken
-        this.a = 3; // this kelimesi class nesnesini ifade eder
+        this.a = 3; // this kelimesi class nesnesni ifade eder
         String adi="";
 
         System.out.println(

@@ -12,7 +12,7 @@ public class Insan {
     public void veriAta(String adi, int yasi){
         this.adi = adi;
         this.yasi = yasi;
-        count++;              // Insan class"inin count statik degiskenini 1 artirdim
+        count++;              // Insan class"inin count statk degiskenini 1 artirdim
         // Ayni class icinde ise Insan.count++; yerine count++; yazilabilir
     }
 

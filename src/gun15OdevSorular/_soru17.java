@@ -12,7 +12,7 @@ public class _soru17 {
      */
     public static void main(String[] args) {
         Scanner scanner =new Scanner(System.in);
-        int randomSayi = (int) (Math.random()*3);
+        int randomSayi = (int) (Math.random()*100);
         System.out.println("bir sayi girin=");
         int i;
 

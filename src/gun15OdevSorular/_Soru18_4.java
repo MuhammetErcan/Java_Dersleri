@@ -2,7 +2,7 @@ package gun15OdevSorular;
 
 public class _Soru18_4 {
     public static void main(String[] args) {
-        /*
+        /*l
              *
             ***
            *****

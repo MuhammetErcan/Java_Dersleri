@@ -14,11 +14,11 @@ public class _soru10 {
         System.out.println("kaç tam sayi girmek istiyorsunuz");
         int kacSayi = scanner.nextInt();
         int maxFark;
-        int minFark = 0;
+
 
         int[] array = new int[kacSayi];
 
-
+        System.out.println("sayilari girin");
         for (int i = 0; i < array.length; i++) {
             array[i] = scanner.nextInt();
         }
@@ -26,6 +26,17 @@ public class _soru10 {
         System.out.println(Arrays.toString(array));
          maxFark=array[array.length-1]-array[0];
         System.out.println("maxFark = " + maxFark);
+        int minFark = maxFark;
+
+        for (int i = 0; i < array.length; i++) {
+
+            if (array[i+1]==array.length-1)
+                break;
+           else if (array[i+1]-array[i]<minFark)
+                minFark=array[i+1]-array[i];
+
+        }
+        System.out.println("minFark = " + minFark);
 
     }
 }

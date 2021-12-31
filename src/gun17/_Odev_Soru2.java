@@ -2,7 +2,7 @@ package gun17;
 
 import java.util.Scanner;
 
-public class _Odev_Soru2 {
+public class    _Odev_Soru2 {
     public static void main(String[] args) {
         Scanner scanner= new Scanner(System.in);
 

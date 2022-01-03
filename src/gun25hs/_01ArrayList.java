@@ -47,6 +47,8 @@ public class _01ArrayList {
         //var a3;   initialize edilmeden kullanilamaz
         var sc = new Scanner(System.in);
 
+        System.out.println(a1+a2);
+
     }
 
 }

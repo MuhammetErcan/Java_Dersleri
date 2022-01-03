@@ -22,6 +22,7 @@ public class _05_HashSet {
 
         Integer[] array = new Integer[randomSet.size()];
 
+
         // 1. yol
         int index = 0;
         for (Integer num: randomSet){

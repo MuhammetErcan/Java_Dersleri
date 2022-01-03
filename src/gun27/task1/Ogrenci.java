@@ -10,6 +10,7 @@ public class Ogrenci {
         int i = 10;
         i *=5;
 
+
         System.out.println(i + ", " + j);
         System.out.println(name + ", " + intNum);
         System.out.println(carp(3, 4));

@@ -8,7 +8,9 @@ public class Main {
         Sirket s3 = new Sirket("Istanbul-2", "AS2", "Kadiköy 5", 1001);
 
         System.out.println(s1);
+        System.out.println("---------------");
         System.out.println(s2);
+        System.out.println("---------------");
         System.out.println(s3);
     }
 }

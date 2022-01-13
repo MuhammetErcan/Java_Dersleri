@@ -29,6 +29,7 @@ public class Ogrenci1 {
     int ogrenciSayisi(){
         //return count;  // ayni class isinde classIsmi yazmaya gerek yoktur
         return Ogrenci1.count;  // staticlere classIsmi.degisken  seklinde ulasilir
+
     }
 
     static int ogrenciSayisiStatic(){

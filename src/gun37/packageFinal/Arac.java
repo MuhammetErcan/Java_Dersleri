@@ -24,6 +24,7 @@ public class Arac {
         this.e = e;
     }
 
+
     public void method(){
         // c = 2;  // bu satir hata verir, cünkü c final oldugu icin deger atanamaz
         //e = 10;  // bu satir hata verir, final e"nin degeri degistirilmeye calisildigi icin

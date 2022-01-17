@@ -5,6 +5,7 @@ public class Main {
         Arac a1= new Arac("BMW",-2020);
         Arac a2=new Arac("Mercedes", 2020,500000);
 
+
         /*a1.setFiyat(-100);
         a1.setFiyat(400000);
         System.out.println(a1.getFiyat());

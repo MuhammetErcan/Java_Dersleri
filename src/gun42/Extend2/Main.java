@@ -1,36 +1,27 @@
 package gun42.Extend2;
 
-public class Main {
+public class Main{
+    /*
+        Arac (fields: turu enum, model)
+            String turu = "Kamyon;
+            Turu turu = Turu.Kamyon;
+            Kamyon (fields: yukKapasitesi)      (class)
+            Otomobil (fields: marka)            (class) (fields: turu enum, model, marka)
+            Otobus (fields: yolcuKapasitesi)    (class)
+       Kamyon, Otomobil, Otobus -> extends Arac
+        Arac"in constructor ekleyin
+     */
     public static void main(String[] args) {
 
+        Otomobil otomobil = new Otomobil(Turu.Otomobil, 2015, "Reno");
+        Otobus otobus = new Otobus(Turu.Otobus, 2020, 40);
+        Kamyon kamyon = new Kamyon(Turu.Kamyon, 2010, 50);
 
-    Kamyon kamyon =new Kamyon();
-    kamyon.model=2010;
-    kamyon.turu=Turu.KAMYON;
-    kamyon.yukKapasitesi=2000;
-
-    Otomobil otomobil = new Otomobil();
-    otomobil.model=2010;
-    otomobil.turu=Turu.OTOMOBIL;
-    otomobil.marka="BMW";
-
-    Otobus otobus = new Otobus();
-    otobus.model=2010;
-    otobus.turu=Turu.OTOBUS;
-    otobus.yolcuKapasitesi=150;
-
-
-    /*
-    Arac(türü enum, model)
-        kamyon (yük kapasitesi)
-        otomobil (marka)
-        otobüs(yolcukapasitesi)
-
-        Kamyon otomobil otobüs aracı extend edecek
-
-        arac constructor deneyin
-     */
-
-
+        System.out.println(kamyon);
+        System.out.println(otomobil);
+        System.out.println(otobus);
     }
+
+
+
 }

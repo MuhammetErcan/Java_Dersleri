@@ -1,25 +1,27 @@
 package gun43.ornek1;
 
-public class Mudur extends Calisan {
-    double makamKatsayi;
+public class Mudur extends Calisan{
+    double makamKatsayisi;
 
-    public Mudur(String isim, int maas, double maasKatsayi, double makamKatsayi) {
-        super(isim, maas, maasKatsayi);
-        this.makamKatsayi = makamKatsayi;
+    public Mudur(String ismi, double maas, double maasKatsayisi, double makamKatsayisi) {
+        super(ismi, maas, maasKatsayisi);
+        this.makamKatsayisi = makamKatsayisi;
     }
 
-    public double maasHesapla(){
-
-        return maas*maasKatsayi*makamKatsayi;
+    @Override
+    public double maasHesapla() {
+        //return maas * maasKatsayisi * makamKatsayisi;
+        //return super.maas * super.maasKatsayisi * this.makamKatsayisi;
+        return super.maasHesapla() * makamKatsayisi;
     }
 
     @Override
     public String toString() {
         return "Mudur{" +
-                "isim='" + isim + '\'' +
+                "ismi='" + ismi + '\'' +
                 ", maas=" + maas +
-                ", maasKatsayi=" + maasKatsayi +
-                ", makamKatsayi=" + makamKatsayi +
+                ", maasKatsayisi=" + maasKatsayisi +
+                ", makamKatsayisi=" + makamKatsayisi +
                 '}';
     }
 }

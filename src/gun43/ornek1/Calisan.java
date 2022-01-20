@@ -1,27 +1,43 @@
 package gun43.ornek1;
 
 public class Calisan {
-    String isim;
-    int maas;
-    double maasKatsayi;
+    String ismi;
+    double maas;
+    double maasKatsayisi;
 
-    public Calisan(String isim, int maas, double maasKatsayi) {
-        this.isim = isim;
+    public Calisan(String ismi, double maas, double maasKatsayisi) {
+        if (maas < 0)
+            throw new RuntimeException("Maas negatif olamaz");
+        // eger maas negatig ise program sonlandirilacak
+        // varsayimimiz bu oldu
+        this.ismi = ismi;
         this.maas = maas;
-        this.maasKatsayi = maasKatsayi;
+
+        try {
+            if (maasKatsayisi < 1)
+                throw new ArithmeticException("");
+            this.maasKatsayisi = maasKatsayisi;
+        } catch (ArithmeticException e) {
+            this.maasKatsayisi = 1;
+        }
+        /*
+        if (maasKatsayisi<1)
+            this.maasKatsayisi = 1;
+        else
+            this.maasKatsayisi = maasKatsayisi;
+        */
     }
 
     public double maasHesapla(){
-
-        return  maas*maasKatsayi;
+        return maas*maasKatsayisi;
     }
 
     @Override
     public String toString() {
         return "Calisan{" +
-                "isim='" + isim + '\'' +
+                "ismi='" + ismi + '\'' +
                 ", maas=" + maas +
-                ", maasKatsayi=" + maasKatsayi +
+                ", maasKatsayisi=" + maasKatsayisi +
                 '}';
     }
 }

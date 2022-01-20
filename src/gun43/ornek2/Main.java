@@ -19,4 +19,33 @@ public class Main {
          toString methodlari
          hangi class"in nasil bir degiskene ihtiyaci var, belirleyin
      */
+   public static void main(String[] args) {
+       Sekil sekil=new Sekil();
+       //System.out.println(sekil.alan());
+       //System.out.println(sekil.cevre());
+
+       Cember cember=new Cember(2.5);
+       System.out.println(cember.cevre());
+       //System.out.println(cember.alan());
+
+       Dikdortgen dikdortgen=new Dikdortgen(3,5);
+       System.out.println(dikdortgen.alan());
+       System.out.println(dikdortgen.cevre());
+
+       Kare kare=new Kare(3);
+       System.out.println(kare.alan());
+       System.out.println(kare.cevre());
+
+       Daire daire=new Daire(3);
+       System.out.println("--------");
+       System.out.println(daire.cevre());
+
+
+
+
+
+
+
+
+   }
 }

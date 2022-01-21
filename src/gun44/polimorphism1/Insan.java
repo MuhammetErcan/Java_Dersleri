@@ -6,11 +6,4 @@ public class Insan {
     public Insan(String adi) {
         this.adi = adi;
     }
-
-    @Override
-    public String toString() {
-        return "Insan{" +
-                "adi='" + adi + '\'' +
-                '}';
-    }
 }

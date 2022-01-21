@@ -1,26 +1,27 @@
 package gun43.ornek2;
 
-public class Kare extends  Dikdortgen{
+public class Kare extends Dikdortgen{
 
-    public Kare(int uzunluk) {
+
+    public Kare(double uzunluk) {
         super(uzunluk, uzunluk);
     }
 
     @Override
-    public double cevre() {
-        return 4*uzunluk;
+    public double getUzunluk() {
+        return super.getUzunluk();
     }
 
-    public double alan(){
-        return uzunluk*uzunluk;
+    @Override
+    public void setUzunluk(double uzunluk) {
+        super.setUzunluk(uzunluk);
+        super.setGenislik(uzunluk);
     }
 
     @Override
     public String toString() {
         return "Kare{" +
-                "uzunluk=" + uzunluk +
-                ", cevre="+ cevre()+
-                ", uzunluk="+uzunluk+
+                "uzunluk=" + super.getUzunluk() +
                 '}';
     }
 }

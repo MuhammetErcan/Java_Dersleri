@@ -19,33 +19,30 @@ public class Main {
          toString methodlari
          hangi class"in nasil bir degiskene ihtiyaci var, belirleyin
      */
-   public static void main(String[] args) {
-       Sekil sekil=new Sekil();
-       //System.out.println(sekil.alan());
-       //System.out.println(sekil.cevre());
-
-       Cember cember=new Cember(2.5);
-       System.out.println(cember.cevre());
-       //System.out.println(cember.alan());
-
-       Dikdortgen dikdortgen=new Dikdortgen(3,5);
-       System.out.println(dikdortgen.alan());
-       System.out.println(dikdortgen.cevre());
-
-       Kare kare=new Kare(3);
-       System.out.println(kare.alan());
-       System.out.println(kare.cevre());
-
-       Daire daire=new Daire(3);
-       System.out.println("--------");
-       System.out.println(daire.cevre());
 
 
 
+        public static void main(String[] args) {
+            Cember c = new Cember(3);
+            Daire d = new Daire(4);
 
+            System.out.printf("Cemberin cevresi %.2f birimdir.\n", c.cevreHesapla());
+            //System.out.println(c.alanHesapla());
+            System.out.printf("Dairenin cevresi %.2f birimdir.\n",d.cevreHesapla());
+            System.out.printf("Dairenin alani %.2f birim karedir.\n",d.alanHesapla());
 
+            System.out.println("---------------------------");
 
+            Dikdortgen d1 = new Dikdortgen(3, 5);
+            Kare k1 = new Kare(4);
 
+            System.out.printf("Dikdörtgenin cevresi %.2f birimdir.\n", d1.cevreHesapla());
+            System.out.printf("Dikdörtgenin alani %.2f birimdir.\n", d1.alanHesapla());
 
-   }
-}
+            System.out.printf("Karenin cevresi %.2f birimdir.\n", k1.cevreHesapla());
+            System.out.printf("Karenin alani %.2f birimdir.\n", k1.alanHesapla());
+            System.out.println(d1);
+            System.out.println(k1.toString());
+
+        }
+    }

@@ -2,22 +2,20 @@ package gun43.ornek2;
 
 public class Daire extends Cember{
 
-    public Daire(double yariCap) {
-        super(yariCap);
+    public Daire(double yaricap) {
+        super(yaricap);
     }
 
 
-
-    public double alan(){
-        return Math.PI*yariCap*yariCap;
+    @Override
+    protected double alanHesapla() {
+        return PI * super.yaricap * yaricap; // super.yaricap == yaricap, bu class'da yaricap olmadigi icin
     }
 
     @Override
     public String toString() {
         return "Daire{" +
-                "yariCap=" + yariCap +
-                "cevre=" + cevre() +
-                "alan=" + alan()+
+                "yaricap=" + yaricap +
                 '}';
     }
 }

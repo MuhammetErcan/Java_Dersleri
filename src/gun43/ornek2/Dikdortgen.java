@@ -1,22 +1,39 @@
 package gun43.ornek2;
 
-public class Dikdortgen extends Sekil {
+public class Dikdortgen extends Sekil{
+    private double uzunluk;
+    private double genislik;
 
-    int uzunluk;
 
-    public Dikdortgen(int uzunluk, int genislik) {
+    public Dikdortgen(double uzunluk, double genislik) {
         this.uzunluk = uzunluk;
         this.genislik = genislik;
     }
 
-    int genislik;
-
-    public double cevre(){
-        return 2*(uzunluk+genislik);
+    @Override
+    protected double alanHesapla() {
+        return uzunluk * genislik;
     }
 
-    public double alan(){
-        return uzunluk*genislik;
+    @Override
+    protected double cevreHesapla() {
+        return 2*(uzunluk + genislik);
+    }
+
+    public double getUzunluk() {
+        return uzunluk;
+    }
+
+    public void setUzunluk(double uzunluk) {
+        this.uzunluk = uzunluk;
+    }
+
+    public double getGenislik() {
+        return genislik;
+    }
+
+    public void setGenislik(double genislik) {
+        this.genislik = genislik;
     }
 
     @Override
@@ -24,8 +41,6 @@ public class Dikdortgen extends Sekil {
         return "Dikdortgen{" +
                 "uzunluk=" + uzunluk +
                 ", genislik=" + genislik +
-                ", cevre="+ cevre()+
-                ", uzunluk="+uzunluk+
                 '}';
     }
 }

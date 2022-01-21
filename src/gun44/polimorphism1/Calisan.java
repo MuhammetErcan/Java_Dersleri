@@ -7,12 +7,11 @@ public class Calisan extends Insan{
         super(adi);
         this.maas = maas;
     }
-
     @Override
     public String toString() {
         return "Calisan{" +
-                "maas=" + maas +
-                ", adi='" + adi + '\'' +
+                "adi='" + adi + '\'' +
+                ", maas=" + maas +
                 '}';
     }
 }

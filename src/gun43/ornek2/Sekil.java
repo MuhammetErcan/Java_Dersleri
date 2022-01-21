@@ -2,12 +2,12 @@ package gun43.ornek2;
 
 public class Sekil {
 
-    public double cevre(){
-       throw new RuntimeException("belirsiz seklin cevresi olmaz hatasi");
-
+    protected double alanHesapla(){
+        throw new RuntimeException("Bu seklin Alani hesaplanamaz");
     }
 
-    public double alan(){
-        throw new RuntimeException("belirsiz seklin alani olmaz hatasi");
+    protected double cevreHesapla(){
+        throw new RuntimeException("Bu seklin Cevresi hesaplanamaz");
     }
+
 }

@@ -28,8 +28,8 @@ public class Main {
         System.out.println(ogrenci);
     }
 
-    public static void calisanBilgisiYaz(Calisan ogrenci){
-        System.out.println(ogrenci);
+    public static void calisanBilgisiYaz(Calisan calisan){
+        System.out.println(calisan);
     }
 
 }

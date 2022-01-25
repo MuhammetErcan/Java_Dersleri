@@ -24,5 +24,6 @@ public class Class1 extends ParentClass implements IInterface, IInterface2 {
         class1.yaz();
         class1.yaz2();
         class1.defaultMethod();
+        class1.method();
     }
 }

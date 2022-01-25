@@ -1,22 +1,33 @@
 package gun38.enum3;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Main2 {
 
-    public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);
-        String girilen=scanner.nextLine();
-
-        ArrayList<Günler> list=new ArrayList<>(Arrays.asList(Günler.PAZARTESI,Günler.SALI,Günler.CARSMBA,Günler.PERSEMBE,Günler.CUMA,Günler.CUMARTESI,Günler.PAZAR));
-
-        System.out.println(Günler.valueOf(girilen).ordinal());
-
+    // class icinde tanimlanmis enum
+    enum Gunler1{
+        PAZARTESI, SALI, CARSAMBA, PERSEMBE, CUMA, CUMARTESI, PAZAR;
     }
+
+    public static void main(String[] args) {
+        // kullanicidan gun adi girmasini isteyin.
+        // girdigi günün Günler enum"indaki ordinal degerini yazin.
+
+        Gunler1 gun1 = Gunler1.CARSAMBA;
+        Gunler gun = Gunler.PAZAR;
+
+        Scanner sc = new Scanner(System.in);
+        String val = sc.nextLine().trim().toUpperCase();
+
+        method(val);
+    }
+
+    public static void method(String val){
+        System.out.println(Gunler.valueOf(val).ordinal()+1);
+    }
+
 }
-enum Günler{
-    PAZARTESI, SALI, CARSMBA, PERSEMBE, CUMA, CUMARTESI, PAZAR,;
+
+enum Gunler{
+    PAZARTESI, SALI, CARSAMBA, PERSEMBE, CUMA, CUMARTESI, PAZAR;
 }

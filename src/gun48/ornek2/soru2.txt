@@ -1,0 +1,17 @@
+Insan
+    String isim
+    boolean ehliyet
+    IsMakinesi arac
+
+    aracaBin();
+    aractanİn();
+    sur();
+    dur();
+
+
+Ismakinesi
+    String isim
+    Insan sofor;
+    boolean calisiyor
+
+

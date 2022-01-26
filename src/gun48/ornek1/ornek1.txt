@@ -1,0 +1,12 @@
+Insan
+    ismi
+    arkadaslar<Insan>
+
+
+    sohbetEt()
+        1. arkadasi ise, arkadasi sohbet etmiyor ise
+
+
+        gerekebilecek parametre ve fieldları ekleyin
+        5 insan oluşturup main de arkadaş atayın ve bunlari sohbet ettirin
+        alternatifleri deneyin

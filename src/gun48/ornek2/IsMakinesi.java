@@ -10,7 +10,12 @@ public class IsMakinesi {
 
     }
 
-    public void getSofor(){
+    public IsMakinesi(String isim, Insan sofor) {
+        this.isim = isim;
+        this.sofor = sofor;
+    }
+
+    public void soforunKim(){
         System.out.println(this.sofor.isim);
     }
 

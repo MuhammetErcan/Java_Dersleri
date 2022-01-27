@@ -7,52 +7,54 @@ public class Insan {
     boolean aracHareketHalindeMi=false;
     boolean aractaMisin=false;
     boolean aracMiKullaniyorsun=false;
-    boolean beklemedeMisin=false;
+
 
     public Insan(String isim, boolean ehliyet) {
         this.isim = isim;
         this.ehliyet = ehliyet;
     }
 
-
-    public void neYapiyorsun(){
-        if (aractaMisin)
-            System.out.println("aractayim");
-
-
-    }
-
     public void aracaBin(IsMakinesi arac){
-        if (aracHareketHalindeMi )
-            System.out.println("araç hareket halinde binemem");
-        else if (arac==null)
-            System.out.println("araç dolu binemem");
-        else
-        System.out.println("araca biniyorum ");
-        this.arac=arac;
-        aractaMisin=true;
-    }
+        if (this.arac==arac){
+            System.out.println("zaten bu araçtayim");
+        }
+        else if (aractaMisin)
+            System.out.println("zaten başka araçtayım  ");
 
+        else if (arac.sofor!=null){
+            System.out.println("aracın şöforü var ben binemem");
+        }
+        else if (aracHareketHalindeMi )
+            System.out.println("araç hareket halinde binemem");
+
+        else{
+            System.out.println("araca biniyorum ");
+            this.arac=arac;
+            arac.sofor=this;
+            aractaMisin=true;
+        }
+
+    }
     public void aractanIn(){
         if (!aractaMisin){
             System.out.println("zaten araçta değilim");
         }
-        else if (!aracHareketHalindeMi){
+        else if (aracHareketHalindeMi){
             System.out.println("araç hareket halinde inemem");
         }
         else{
             System.out.println("Tamam iniyorum");
-            this.arac=null;
+            arac.sofor=null;
+
             aractaMisin=false;
-            beklemedeMisin=true;
+
         }
     }
-
     public void araciSur(){
         if (!ehliyet){
             System.out.println("ehliyetim yok kullanamam");
         }
-        else if (!aracHareketHalindeMi){
+        else if (aracHareketHalindeMi){
             System.out.println("araç zaten hareket halinde nasıl süreyim");
         }
         else if (!aractaMisin){
@@ -64,20 +66,14 @@ public class Insan {
             aractaMisin=true;
             aracMiKullaniyorsun=true;
         }
-
     }
-
     public void dur(){
         if (aracMiKullaniyorsun && aracHareketHalindeMi){
             System.out.println("araci durduruyorum");
             aracHareketHalindeMi=false;
             aracMiKullaniyorsun=false;
         }
-
         else
             System.out.println("araç sürmüyoeum ki durdurayım");
     }
-
-
-
 }

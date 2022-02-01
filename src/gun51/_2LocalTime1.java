@@ -2,7 +2,7 @@ package gun51;
 
 import java.time.LocalTime;
 
-public class LocalTime1 {
+public class _2LocalTime1 {
     public static void main(String[] args) {
 
         LocalTime t1=LocalTime.now();
